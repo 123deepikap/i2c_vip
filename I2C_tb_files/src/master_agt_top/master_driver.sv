@@ -112,7 +112,7 @@ task master_driver::run_phase(uvm_phase phase);
        #(mcfg.clk_period) vif.clk_int=!vif.clk_int;
       end
   join_none
-  
+  //join none of the process 
   forever
     begin
  	  seq_item_port.get_next_item(req);
